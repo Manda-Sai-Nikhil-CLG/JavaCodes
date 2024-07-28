@@ -1,0 +1,179 @@
+public class MainClass {
+    public static void main(String[] args) {;
+        boolean isJavaFun = true;
+        boolean isFishTasty = false;
+        System.out.println(isJavaFun);
+        System.out.println(isFishTasty);
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {;
+        int x = 10;
+        int y = 9;
+        System.out.println(x>y);
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {;
+        if (20>18){
+            System.out.println("20 is greater than 18");
+        }
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        int time = 20;
+        if (time < 10){
+            System.out.println("Good Morning");
+        }
+        else if (time < 20){
+            System.out.println("Good Day");
+        }
+        else{
+            System.out.println("Good Evening");
+        }
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        int day = 4;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+        }
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i<5){
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        int i = 0;
+        do{
+            System.out.println(i);
+            i++;
+        }
+        while (i<5);
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        String[] cars = {"Voho","BMW","Audi","Mercedes Benz"};
+        for(String i : cars){
+            System.out.println(i);
+        }
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        for (int i=0; i<10; i++ ){
+            if(i==4){
+                break;
+            }
+            System.out.println(i);
+        }
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        for (int i=0; i<10; i++ ){
+            if(i==4){
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class MainClass {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        String userName;
+        System.out.println("Enter username");
+        userName = myObj.nextLine();
+        System.out.println("Username is: "+userName);
+    }
+}
+
+publlic class StringDemo{
+    public static void main(String args[]){
+        char[] helloArray = {'h','e','l','l','o'};
+        String helloString = new String(helloArray);
+        System.out.println(helloString);
+    }
+}
+
+import java.util.Scanner;
+
+public class MainClass {
+    public static void main(String[] args) {
+        Scanner sObj = new Scanner(System.in);
+        while (true) {
+            System.out.println("1-Addition \n2-Subtraction \n3-Multiplication \n4-Division \nModulo");
+            System.out.println("\nEnter the operation: ");
+            int operation = sObj.nextInt();
+
+            System.out.println("Enter number 1: ");
+            int num1 = sObj.nextInt();
+            System.out.println("Enter number 2: ");
+            int num2 = sObj.nextInt();
+
+            if (operation == 1) {
+                System.out.println("Sum is: " + (num1 + num2));
+            } else if (operation == 2) {
+                System.out.println("Difference is: " + (num1 - num2));
+            } else if (operation == 3) {
+                System.out.println("Product is: " + (num1 * num2));
+            } else if (operation == 4) {
+                System.out.println("Division is: " + (num1 / num2));
+            } else if (operation == 5) {
+                System.out.println("Modulo is: " + (num1 % num2));
+            } else {
+                System.out.println("Invalid Input");
+            }
+            System.out.println("\nIf you want to continue enter \"1\", if you want to terminate, enter \"0\"");
+            int cont = sObj.nextInt();
+            if (cont == 0) {
+                break;
+            } else {
+                continue;
+            }
+        }
+    }
+}
